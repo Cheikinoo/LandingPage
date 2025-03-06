@@ -1,0 +1,192 @@
+
+*{
+    margin: 0%;
+    padding: 0%; 
+}
+
+.container {
+border: 1px solid black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.container div{
+    margin: 30px;
+}
+.button-shop{
+    color: var(--colorWhite);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    right: 30px;
+    
+}
+
+.button-shop-reverse{
+    color: var(--colorWhite); 
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    right: 20px;
+    margin: 20px;
+}
+
+.button-shop-reverse:hover{
+    background-color: blueviolet;
+}
+.image-container{
+    position: relative;
+    left: 320px;
+}
+.image-container img{
+    width: 50%;
+    position: relative;
+    left: 50px;
+}
+
+.guess{
+    position: relative;
+    left: 100px;
+}
+.guess div {
+background-color: black;
+width: 150px;
+}
+.guess-reverse{
+    position: relative;
+    right: 100px;
+}
+.guess-reverse div {
+    background-color: black;
+    width: 150px;
+}
+
+.categories{
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.categories div {
+    background-color: black;
+    color: var(--colorWhite);
+    padding: 80px;
+    margin: 40px;
+    border-radius: 70px;
+    width: 50%;
+    text-align: center;
+}
+
+.icons{
+display: flex;
+justify-content: center;
+margin: 50px;
+
+}
+.icons div {
+    margin: 90px;
+}
+
+.container-reverse{
+border: 1px solid black;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.container-reverse img {
+    width: 50%;
+    position: relative;
+    left: 50px;
+}
+
+.image-reverse{
+    position: relative;
+    right: 30px;
+}
+
+.footer{
+    background-color: black;
+    color: var(--colorWhite);
+    padding: 150px;
+    text-align: center;
+}
+
+.button-footer {
+    background-color: red;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   align-items: center;
+    
+}
+/* responsive pour un pc */
+@media (max-width: 1024px) {
+    .container,
+    .container-reverse,
+    .categories,
+    .icons {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container,
+    .image-reverse {
+        left: 0;
+        right: 0;
+    }
+
+    .image-container img,
+    .container-reverse img {
+        width: 80%; 
+        left: 0;
+    }
+    
+    .guess,
+    .guess-reverse {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .categories div {
+        width: 80%;
+        margin: 20px; 
+        padding: 50px; 
+    }
+
+    .icons div {
+        margin: 30px; 
+    }
+
+    .button-shop,
+    .button-shop-reverse {
+        right: 0;
+    }
+}
+/* responsive pour mobile */
+@media (max-width: 768px) {
+    .image-container img,
+    .container-reverse img {
+        width: 100%;
+    }
+
+    .categories div {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .footer {
+        padding: 80px;
+    }
+
+    .button-footer {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+:root {
+    --colorWhite:#ffffff; 
+}
